@@ -2,7 +2,7 @@
 
 </hr>
 
-<a href="https://news-app-puifwoij8.vercel.app/"><h2>Demo</h2></a>
+<a href="https://news-app-puifwoij8.vercel.app/" target="_blank"><h2>Demo</h2></a>
 <img src="./github/news.gif"/>
 
 > <h2>Esse projeto foi desenvolvido com as seguintes tecnologias</h2>
