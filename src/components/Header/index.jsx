@@ -13,14 +13,19 @@ function Header() {
   function handleFormSubmit(e) {
     e.preventDefault();
     setQuery(tempQuery);
-    console.log(tempQuery);
   }
   return (
     <header>
       <div className="header-content">
         <h1>News</h1>
         <form onSubmit={handleFormSubmit}>
-          <input type="text" onChange={handleQueryChange} value={tempQuery} />
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            onChange={handleQueryChange}
+            value={tempQuery}
+            placeholder="Search"
+          />
         </form>
       </div>
     </header>

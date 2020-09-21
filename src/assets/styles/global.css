@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 body {
@@ -10,4 +12,9 @@ body {
 body,
 input {
   font-family: "Poppins", sans-serif;
+}
+.loading {
+  max-width: 1120px;
+  margin: auto;
+  text-align: center;
 }

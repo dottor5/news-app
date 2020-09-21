@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Pagination from "./components/Pagination";
 
-import "./global.css";
+import "./assets/styles/global.css";
 
 function App() {
   return (
