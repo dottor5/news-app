@@ -12,6 +12,7 @@ export default function Main() {
         key={index}
         image={article.urlToImage}
         title={article.title}
+        url={article.url}
         source={article.source.name}
         publishedAt={article.publishedAt}
       />

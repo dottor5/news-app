@@ -15,6 +15,9 @@ input {
 }
 .loading {
   max-width: 1120px;
+  height: 50vh;
   margin: auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -4,7 +4,7 @@ import { useData } from "../../context/Data";
 import "./styles.css";
 
 function Pagination() {
-  const { totalResults, setCurrentPage } = useData();
+  const { totalResults, currentPage, setCurrentPage } = useData();
 
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalResults / 3); i++) {
@@ -14,6 +14,7 @@ function Pagination() {
     <div className="navigation">
       {pageNumbers.map((pageNumber) => (
         <button
+          className={currentPage === pageNumber ? "active" : ""}
           key={pageNumber}
           onClick={() => {
             setCurrentPage(pageNumber);

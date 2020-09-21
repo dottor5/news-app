@@ -29,5 +29,6 @@ header h1 {
   font-size: 16px;
 }
 .header-content svg {
+  color: #363f5f;
   margin-left: 16px;
 }

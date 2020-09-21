@@ -5,7 +5,7 @@ import "./styles.css";
 
 function Header() {
   const [tempQuery, setTempQuery] = useState("");
-  const { setQuery } = useData();
+  const { setQuery, setCurrentPage } = useData();
 
   function handleQueryChange(e) {
     setTempQuery(e.target.value);
@@ -13,13 +13,14 @@ function Header() {
   function handleFormSubmit(e) {
     e.preventDefault();
     setQuery(tempQuery);
+    setCurrentPage(1);
   }
   return (
     <header>
       <div className="header-content">
         <h1>News</h1>
         <form onSubmit={handleFormSubmit}>
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
           <input
             type="text"
             onChange={handleQueryChange}

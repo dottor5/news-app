@@ -6,9 +6,13 @@ import "./styles.css";
 function Article(props) {
   return (
     <article className="post">
-      <img src={props.image} alt="" />
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
+        <img src={props.image} alt="" />
+      </a>
       <div className="post-info">
-        <h2>{props.title}</h2>
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
+          <h2>{props.title}</h2>
+        </a>
         <span className="post-info-source">{props.source}</span>
       </div>
       <small className="post-info-date">
