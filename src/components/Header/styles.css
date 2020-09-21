@@ -1,0 +1,22 @@
+header {
+  background-color: #3688d3;
+  color: #ffffff;
+  height: 146px;
+}
+header h1 {
+  font-weight: 100;
+}
+.header-content {
+  max-width: 1120px;
+  height: 146px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-content input {
+  width: 100%;
+  height: 56px;
+  border-radius: 4px;
+  padding: 10px;
+}
